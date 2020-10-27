@@ -59,5 +59,5 @@ xhr2.onreadystatechange = () => {
             alert(`the server is taking a break`);
         }
     };
-xhr2.open('GET','');
+xhr2.open('GET','http://api.weatherapi.com/v1/current.json?key=9008d4b175a84565aa005823202210&q=Santa Fe, New Mexico');
 xhr2.send();
