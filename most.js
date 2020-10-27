@@ -40,6 +40,7 @@ const time2 = document.querySelector('#time');
 const temp2 = document.querySelector('#temp2');
 const humid2 = document.querySelector('#humid2');
 const win2d = document.querySelector('#wind2'); 
+const icon2 = document.querySelector('p');
 
 let xhr2 = new XMLHttpRequest();
 
@@ -55,6 +56,7 @@ xhr2.onreadystatechange = () => {
         temp2.innerHTML = `${data.current.temp_f} fahrenheit`;
         humid2.innerHTML = `Humidity: ${data.current.humidity}`;
         wind2.innerHTML = `windspeed: ${data.current.wind_mph}`;
+        icon2.scr = data.current.condition.icon;
 
         }else if(xhr2.status === 404){
             alert(`we could not find the page`);
