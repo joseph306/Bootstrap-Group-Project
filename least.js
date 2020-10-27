@@ -26,5 +26,5 @@ xhr.onreadystatechange = () => {
             alert(`the server is taking a break`);
         }
     };
-xhr.open('GET', );
+xhr.open('GET', 'http://api.weatherapi.com/v1/current.json?key=9008d4b175a84565aa005823202210&q=salem, Massachusetts');
 xhr.send();
